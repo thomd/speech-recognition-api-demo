@@ -8,10 +8,10 @@ app.set('views', './views')
 app.set('view engine', 'jade')
 app.use(express.static('./public'))
 app.use(expressLogging(logger))
-app.get('/', (request, response) => {
-  let languages = accepts(request).languages()
+app.get('/', (req, res) => {
+  let languages = accepts(req).languages()
   let language = languages[0]
-  response.render('index', {language})
+  res.render('index', {language})
 })
 app.listen(3000)
 
