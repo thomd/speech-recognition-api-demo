@@ -15,6 +15,7 @@
     "express": "^4.14.0",
     "express-locale": "^0.1.2",
     "express-logging": "^1.1.1",
+    "express-status-monitor": "0.0.11",
     "jade": "^1.11.0",
     "logops": "^1.0.0-beta.2",
     "webpack": "^1.13.1",

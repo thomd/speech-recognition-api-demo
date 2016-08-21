@@ -6,6 +6,7 @@ import accepts from 'accepts'
 const app = express()
 app.set('views', './views')
 app.set('view engine', 'jade')
+app.use(require('express-status-monitor')())
 app.use(express.static('./public'))
 app.use(expressLogging(logger))
 app.get('/', (req, res) => {
